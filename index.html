@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gender-Equality</title>
+        <link rel="icon" type="image/x-icon" href="favicon (2).ico">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+    <style>
+        *, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 199, 94);
+}
+
+.law {
+  position: relative;
+  margin: 100px auto;
+  width: 400px;
+  height: 400px;
+}
+.law:hover { cursor: none;}
+
+.law:hover .cross{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: 3s;  
+} 
+.law:hover .rope.left1{
+    top: 92px;
+    transition: 3s;
+}
+.law:hover .rope.left2{
+    top: 92px;
+    transition: 3s;
+}
+.law:hover .weigh.left{
+    top: 182px;
+    transition: 3s;
+}
+.law:hover .man.face{
+    top: 97px;
+    transition: 3s;
+    background-color: green;
+}
+.law:hover .man.body1{
+    top: 118px;
+    transition: 3s;
+    background-color: green;
+}
+.law:hover .man.body2 {
+    top: 126px;
+    transition: 3s;
+    background-color: green;
+}
+.law:hover .man.lefth {
+    top: 126px;
+    transition: 3s;
+    background-color: green;
+}
+.law:hover .man.righth {
+    top: 126px;
+    transition: 3s;
+    background-color: green;
+}
+.law:hover .man.leftl{
+    top: 156px;
+    transition: 3s;
+    background-color: green;
+}
+.law:hover .man.rightl{
+    top: 156px;
+    transition: 3s;
+    background-color: green;
+}
+.law:hover .rope.right2{
+    top: 92px;
+    transition: 3s;
+}
+.law:hover .rope.right1{
+    top: 92px;
+    transition: 3s;
+}
+.law:hover .weigh.right{
+    top: 182px;
+    transition: 3s;
+}
+.law:hover .woman.face{
+    top: 97px;
+    background-color: green;
+    transition: 3s;
+}
+.law:hover .woman.body1{
+    top: 118px;
+    background-color: green;
+    transition: 3s;
+}
+.law:hover .woman.body2 {
+    top: 126px;
+    border-bottom-color: green;
+    transition: 3s;
+}
+.law:hover .woman.lefth {
+    top: 123px;
+    background-color: green;
+    transition: 3s;
+}
+.law:hover .woman.righth {
+    top: 121px;
+    background-color: green;
+    transition: 3s;
+}
+.law:hover .woman.leftl{
+    top: 156px;
+    transition: 3s;
+    background-color: green;
+}
+.law:hover .woman.rightl{
+    top: 156px;
+    transition: 3s;
+    background-color: green;
+}
+.law .base
+    {
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        width: 300px;
+        height: 40px;
+        border-radius: 30px 30px 0 0;
+        background-color: black;
+    }
+.law .support
+{
+    position:absolute;
+    bottom: 40px;
+    left: 80px;
+    width:220px;
+    height: 35px;
+    background-color:black;
+    border-radius: 10px 10px 0 0;
+}
+.law .stem
+{
+    position:absolute;
+    bottom: 75px;
+    left: 165px;
+    width:50px;
+    height:400px;
+    background-color:black;
+    border-radius: 30% 30% 0 0;
+}
+.law .cross
+{
+    position:absolute;
+    bottom: 400px;
+    left: -100px;
+    width: 600px;
+    height:30px;
+    background-color: black;
+    border-radius: 45%;
+    -ms-transform:rotate(350deg);
+    transform:rotate(350deg);
+}
+.law .rope.left1
+{
+    position:absolute;
+    top: 140px;
+    left: -125px;
+    height: 2px;
+    width:220px;
+    background-color: black;
+    transform: rotate(70deg);
+}
+.law .rope.left2
+{
+    position:absolute;
+    top: 140px;
+    left: -200px;
+    height: 2px;
+    width:220px;
+    background-color: black;
+    transform: rotate(110deg);
+}
+.law .weigh.left{
+    position:absolute;
+    top: 240px;
+    left: -133px;
+    height: 35px;
+    width:160px;
+    background-color: black;
+    border-radius: 0 0 100% 100%;
+}
+.law .man.face{
+    position:absolute;
+    top: 155px;
+    left: -62px;
+    height:20px;
+    width:20px;
+    background-color: red;
+    border-radius:100%;
+}
+.law .man.body1{
+    position:absolute;
+    top: 176px;
+    left: -75px;
+    height:8px;
+    width:46px;
+    background-color: red;
+    border-radius: 40% 40% 0 0;
+}
+.law .man.body2{
+    position:absolute;
+    top: 184px;
+    left: -65px;
+    height:30px;
+    width:26px;
+    background-color: red;
+}
+.law .man.lefth
+{
+    position:absolute;
+    top: 184px;
+    left: -75px;
+    height:24px;
+    width:8px;
+    background-color: red;
+    border-radius: 0 0 40% 40%;
+}
+.law .man.righth
+{
+    position:absolute;
+    top: 184px;
+    left: -37px;
+    height:24px;
+    width:8px;
+    background-color: red;
+    border-radius: 0 0 40% 40%;
+}
+.law .man.leftl
+{
+    position:absolute;
+    top: 214px;
+    left: -65px;
+    height:26px;
+    width:12px;
+    background-color: red;
+    border-radius: 0 0 40% 40%;
+}
+.law .man.rightl
+{
+    position:absolute;
+    top: 214px;
+    left: -51px;
+    height:26px;
+    width:12px;
+    background-color: red;
+    border-radius: 0 0 40% 40%;
+}
+.law .rope.right1
+{
+    position:absolute;
+    top: 46px;
+    left: 320px;
+    height: 2px;
+    width:220px;
+    background-color: black;
+    transform: rotate(110deg);
+}
+.law .rope.right2
+{
+    position:absolute;
+    top: 46px;
+    left: 395px;
+    height: 2px;
+    width:220px;
+    background-color: black;
+    transform: rotate(70deg);
+}
+.law .weigh.right{
+    position:absolute;
+    top: 146px;
+    left: 387px;
+    height: 35px;
+    width:160px;
+    background-color: black;
+    border-radius: 0 0 100% 100%;
+}
+.law .woman.face{
+    position:absolute;
+    top: 61px;
+    left: 458px;
+    height:20px;
+    width:20px;
+    background-color: red;
+    border-radius:100%;
+}
+.law .woman.body1{
+    position:absolute;
+    top: 82px;
+    left: 448px;
+    height:8px;
+    width:40px;
+    background-color: red;
+    border-radius: 100% 100% 0 0;
+}
+.law .woman.body2{
+    position:absolute;
+    top: 90px;
+    left: 445px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 32px solid red;
+    width: 46px;
+}
+.law .woman.lefth
+{
+    position:absolute;
+    top: 87px;
+    left: 443px;
+    height:26px;
+    width:8px;
+    background-color: red;
+    border-radius: 0 0 40% 40%;
+    transform: rotate(20deg);
+}
+.law .woman.righth
+{
+    position:absolute;
+    top: 85px;
+    left: 484px;
+    height:26px;
+    width:8px;
+    background-color: red;
+    border-radius:0 0 40% 40%;
+    transform: rotate(340deg);
+}
+.law .woman.leftl
+{
+    position:absolute;
+    top: 120px;
+    left: 455px;
+    height:26px;
+    width:12px;
+    background-color: red;
+    border-radius: 0 0 40% 40%;
+}
+.law .woman.rightl
+{
+    position:absolute;
+    top: 120px;
+    left: 469px;
+    height:26px;
+    width:12px;
+    background-color: red;
+    border-radius: 0 0 40% 40%;
+}
+</style>
+<body>
+    <h1 style="text-align:center; color:brown;text-decoration:underline;"><strong>Gender-Equality</strong> </h1>
+    <h2><strong>Our Society still give much importance to men over women....</strong> </h2>
+    <p> Take a pledge to move towards Gender Equality (Just like moving your mouse to the object) </p>
+    <div class="law">
+        <div class="base"></div>
+        <div class="support"></div>
+        <div class="stem"></div>
+        <div class="cross"></div>
+        <div class="rope left1"></div>
+        <div class="rope left2"></div>
+        <div class="weigh left"></div>
+        <div class="man face"></div>
+        <div class="man body1"></div>
+        <div class="man body2"></div>
+        <div class="man lefth"></div>
+        <div class="man righth"></div>
+        <div class="man leftl"></div>
+        <div class="man rightl"></div>
+        <div class="rope right1"></div>
+        <div class="rope right2"></div>
+        <div class="weigh right"></div>
+        <div class="woman face"></div>
+        <div class="woman body1"></div>
+        <div class="woman body2"></div>
+        <div class="woman lefth"></div>
+        <div class="woman righth"></div>
+        <div class="woman leftl"></div>
+        <div class="woman rightl"></div>
+    </div>
+</body>
+</html>
